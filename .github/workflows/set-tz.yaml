@@ -1,0 +1,9 @@
+name: Demo setting timezone
+on: workflow_dispatch
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'America/New_York'
+    steps:
+      - run: date
